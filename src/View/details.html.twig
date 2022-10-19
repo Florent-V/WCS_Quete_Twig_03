@@ -1,0 +1,18 @@
+{# products.html.twig #}
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Opening Time
+{% endblock %}
+
+
+
+{% block content %}
+    <h1>Our Opening Time</h1>
+    <ul>
+        {% for day, hour in openingTime %}
+            <li>{{ day }} : {{ hour }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
